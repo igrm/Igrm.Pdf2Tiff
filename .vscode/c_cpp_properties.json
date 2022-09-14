@@ -1,0 +1,21 @@
+{
+    "env": {
+      "myDefaultIncludePath": ["${workspaceFolder}"]
+    },
+    "configurations": [
+      {
+        "name": "Debian",
+        "intelliSenseMode": "clang-x64",
+        "includePath": ["${myDefaultIncludePath}", "/usr/include/ImageMagick-6", "/usr/include/x86_64-linux-gnu/ImageMagick-6"],
+        "forcedInclude": [],
+        "compilerPath": "/usr/bin/clang",
+        "cStandard": "c17",
+        "browse": {
+          "path": ["${workspaceFolder}"],
+          "limitSymbolsToIncludedHeaders": true,
+          "databaseFilename": ""
+        }
+      }
+    ],
+    "version": 4
+  }
