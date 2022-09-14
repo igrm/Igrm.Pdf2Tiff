@@ -2,7 +2,10 @@
 #include <stdlib.h>
 #include <wand/MagickWand.h>
 
-void ThrowWandException(wand);
+#define MAGICKCORE_QUANTUM_DEPTH 16
+#define MAGICKCORE_HDRI_ENABLE 0
+
+void ThrowWandException(MagickWand* wand);
 
 int main(int argc, char **argv) 
 {
@@ -57,7 +60,7 @@ int main(int argc, char **argv)
     return(0);
 }
 
-void ThrowWandException(wand) 
+void ThrowWandException(MagickWand* wand) 
 { 
     char *description;
     ExceptionType severity;
